@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vercel Env Downloader</title>
+    <style>
+      @font-face {
+        font-family: "Geist";
+        src: url("./assets/fonts/Geist-Regular.woff2") format("woff");
+        font-weight: 300;
+      }
+
+      @font-face {
+        font-family: "Geist";
+        src: url("./assets/fonts/Geist-SemiBold.woff2") format("woff");
+        font-weight: semi-bold;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Geist, sans-serif;
+        background-color: black;
+        color: white;
+        min-width: 300px;
+        min-height: 200px;
+      }
+
+      nav {
+        border-bottom: 2px solid #2a2a2a;
+        background: #0a0a0a;
+        padding: 0.8em 0.6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: semi-bold;
+        font-size: 8pt;
+      }
+
+      .container {
+        padding: 1em;
+        text-align: center;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h1>Vercel Environment Variables</h1>
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/tushgaurav/VercelEnvVariables"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/github.svg"
+            alt="Tushar Gaurav"
+            style="border-radius: 50%; width: 20px; height: 20px"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      Easily export all the environment variables at once!
+    </div>
+    <pre
+      id="output"
+      style="white-space: pre-wrap; word-wrap: break-word; margin-top: 10px"
+    ></pre>
+    <script src="popup.js"></script>
+  </body>
+</html>
