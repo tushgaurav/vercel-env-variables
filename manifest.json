@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Vercel Env Variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch and download environment variables from Vercel.",
   "icons": {
     "16": "assets/icons/icon-16x16.png",

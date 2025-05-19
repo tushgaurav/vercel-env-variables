@@ -25,57 +25,76 @@
 
       body {
         font-family: Geist, sans-serif;
-        background-color: black;
+        background-color: #0a0a0a;
         color: white;
         min-width: 300px;
-        min-height: 200px;
+        min-height: 100px;
       }
 
       nav {
         border-bottom: 2px solid #2a2a2a;
-        background: #0a0a0a;
-        padding: 0.8em 0.6em;
+        background: #000000;
+        padding: 1em;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-weight: semi-bold;
-        font-size: 8pt;
+      }
+
+      nav h1 {
+        font-size: 1.2em;
       }
 
       .container {
-        padding: 1em;
+        padding: 1.5em;
+      }
+
+      .info-section {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        padding: 1.2em;
+        margin-bottom: 1.5em;
         text-align: center;
-        font-weight: 300;
+      }
+
+      .info-section p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        color: #a0a0a0;
+      }
+
+      .github-link img {
+        transition: transform 0.2s ease;
+      }
+
+      .github-link:hover img {
+        transform: scale(1.1);
       }
     </style>
   </head>
   <body>
     <nav>
-      <div>
-        <h1>Vercel Environment Variables</h1>
-      </div>
-
-      <div>
-        <a
-          href="https://github.com/tushgaurav/VercelEnvVariables"
-          target="_blank"
-        >
-          <img
-            src="./assets/images/github.svg"
-            alt="Tushar Gaurav"
-            style="border-radius: 50%; width: 20px; height: 20px"
-          />
-        </a>
-      </div>
+      <h1>Vercel Environment Variables</h1>
+      <a
+        class="github-link"
+        href="https://github.com/tushgaurav/VercelEnvVariables"
+        target="_blank"
+      >
+        <img
+          src="./assets/images/github.svg"
+          alt="GitHub Repository"
+          style="width: 24px; height: 24px"
+        />
+      </a>
     </nav>
 
     <div class="container">
-      Easily export all the environment variables at once!
+      <div class="info-section">
+        <p>
+          Vercel doesn't provide a way to export all environment variables at once. This tool helps you to download all environment variables with just one click.
+        </p>
+      </div>
     </div>
-    <pre
-      id="output"
-      style="white-space: pre-wrap; word-wrap: break-word; margin-top: 10px"
-    ></pre>
     <script src="popup.js"></script>
   </body>
 </html>
